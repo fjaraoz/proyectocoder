@@ -71,7 +71,7 @@ header {
 }
 /* IMAGENES DEFAULT */
 .section img{
-    width: 250px;
+    width: 500px;
     height: auto;
 } 
 /* TITULOS */
@@ -93,5 +93,16 @@ header {
     font-size: 0.8rem;
 }
 
+/****** BESTIAS *******/
+.beasts img{
+    width: 250px;
+    height: 200px;
+} 
 
 /*********************** FOOTER ***********************/
+footer{
+    font-size: 0.5rem;
+}
+footer h3{
+    font-size: 0.8rem;
+}
