@@ -32,20 +32,20 @@ header {
     font-family: 'Playfair Display', serif;
 }
 
-/*********************** SECCIONES PRINCIPALES  ***********************/
 .container{
     padding:2%;
 }
+/*********************** SECCIONES PRINCIPALES  ***********************/
 .content{
     color:#FFD700 ;
     font-family: 'Playfair Display', serif;
     display:grid;
-    margin: 50px 10px 100px 10px;
+    margin: 50px 50px 100px 50px;
 }
 /* IMAGENES DEFAULT */
 .content img{
     width: 500px;
-    height: 300px;
+    height: auto;
 } 
 /* TITULOS */
 .content h1{
@@ -59,8 +59,7 @@ header {
     font-size: 1.1rem;
 }
 /* PÁRRAFOS */
-.content p{
-    padding-left: 50px;
+.content p{g
     align-items: center;
     color:#FFFFFF ;
     font-family: 'Lato', sans-serif;
@@ -76,8 +75,8 @@ header {
 }
 /* IMAGENES DEFAULT */
 .section img{
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    height: auto;
 } 
 /* TITULOS */
 .section h1{
