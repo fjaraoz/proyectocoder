@@ -6,7 +6,7 @@
 
  /*********************** FONDO GENERAL ***********************/
 html{
-    font-size: 30px;
+    font-size: 25px;
 }
 body {
     margin: 0;
@@ -25,7 +25,7 @@ header {
     z-index: 1;
 }
 .navbar-brand img{
-    width: 300px;
+    width: 250px;
     height: auto;
 }
 .nav-item {
@@ -33,6 +33,9 @@ header {
 }
 
 /*********************** SECCIONES PRINCIPALES  ***********************/
+.container{
+    padding:2%;
+}
 .content{
     color:#FFD700 ;
     font-family: 'Playfair Display', serif;
@@ -41,8 +44,8 @@ header {
 }
 /* IMAGENES DEFAULT */
 .content img{
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 300px;
 } 
 /* TITULOS */
 .content h1{
@@ -57,6 +60,7 @@ header {
 }
 /* PÁRRAFOS */
 .content p{
+    padding-left: 50px;
     align-items: center;
     color:#FFFFFF ;
     font-family: 'Lato', sans-serif;
@@ -72,8 +76,8 @@ header {
 }
 /* IMAGENES DEFAULT */
 .section img{
-    width: 500px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
 } 
 /* TITULOS */
 .section h1{
@@ -88,6 +92,7 @@ header {
 }
 /* PÁRRAFOS */
 .section p{
+    padding:5%;
     color:#FFFFFF ;
     text-align:justify;
     font-family: 'Lato', sans-serif;
