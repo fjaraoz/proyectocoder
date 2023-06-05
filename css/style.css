@@ -38,7 +38,7 @@ header {
     color:#FFD700 ;
     font-family: 'Playfair Display', serif;
     display:grid;
-    margin: 50px 50px 100px 50px;
+    padding: 2%;
 }
 /* IMAGENES DEFAULT */
 .content img{
@@ -87,22 +87,151 @@ header {
 }
 /* PÁRRAFOS */
 .section p{
-    padding:5%;
+    padding:0.1%;
     color:#FFFFFF ;
     font-family: 'Lato', sans-serif;
     font-size: 0.8rem;
 }
+.pruebita{
+    display:grid;
+    grid-template: repeat(5,20%) / repeat(5,20%);
+    border-color: black;
+    border-style: double;
+    position: relative;
+}
+.pruebita div{
+    grid-area: 1/1/7/7;
+    border-color: aqua;
+    border-style: dashed;
+}
 
 /****** BESTIAS *******/
 .beasts img{
-    width: 250px;
-    height: 200px;
+    width: 300px;
+    height: 250px;
 } 
 
 /*********************** FOOTER ***********************/
 footer{
     font-size: 0.5rem;
 }
-footer h3{
+footer h2{
     font-size: 0.8rem;
+    font-weight: bold;
+    color:whitesmoke;
+}
+
+/*********** GALERIA *****************/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline: 5%;
+}
+  
+.gallery-image {
+    flex: 0 0 33.33%;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-image img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1200px) {
+    .gallery-image {
+        flex: 0 0 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    .gallery-image {
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery-image {
+        flex: 0 0 100%;
+    }
+}
+
+.gallery-image:hover {
+    transform: scale(1.4);
+}
+
+/*********************** UPDATES ***********************/
+.update {
+    background-color: brown;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.update .date-box {
+    width: 20%;
+    padding: 10px;
+    border-right: 1px solid #FFD700;
+}
+
+.update .content-box {
+    width: 80%;
+    padding: 10px;
+}
+
+.update h2,
+.update h3,
+.update p {
+    margin: 0;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .update {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .update {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .update .date-box,
+    .update .content-box {
+        width: 100%;
+        border-right: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .update {
+        width: 100%;
+    }
+}
+.custom-button {
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+    color: #FFFFFF;
+}
+
+.custom-button:hover {
+    background-color: #FFD700;
+    border-color: #FFD700;
+    color: #FFFFFF;
 }
