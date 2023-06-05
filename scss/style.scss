@@ -1,15 +1,5 @@
-$sub-color: #FFD700;
-$title-color: #D4AF37;
-$text-color: #FFFFFF;
-$font-family-body: 'Lato', sans-serif;
-$font-family-content: 'Playfair Display', serif;
-$background-color-header: black;
-$background-color-box: brown;
-$background-color-button: #D4AF37;
-$background-color-button-active: #FFD700;
-$border-color-button: #D4AF37;
-$border-color-button-active: #FFD700;
-
+@import 'variables';
+@import 'animations';
 /*********************** FONTS ***********************/
 @import "https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap";
@@ -48,9 +38,11 @@ header {
 	img {
 		width: 500px;
 		height: auto;
+		animation: fadeIn 1s ease-in-out;
 	}
 	h1 {
 		font-size: 2rem;
+		animation: slideInDown 1s ease-in-out;
 	}
 	h2 {
 		font-size: 1.3rem;
@@ -165,6 +157,8 @@ footer {
 		color: $text-color;
 	}
 }
+
+/** MEDIA QUERIES **/
 @media (max-width: 1200px) {
 	.gallery-image {
 		flex: 0 0 50%;
@@ -203,6 +197,7 @@ footer {
 		width: 100%;
 	}
 }
+
 
 
 /*# sourceMappingURL=style.scss.map */

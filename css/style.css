@@ -1,6 +1,24 @@
-/*********************** FONTS ***********************/
 @import "https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap";
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*********************** FONTS ***********************/
 html {
   font-size: 25px;
 }
@@ -40,9 +58,11 @@ header {
 .content img {
   width: 500px;
   height: auto;
+  animation: fadeIn 1s ease-in-out;
 }
 .content h1 {
   font-size: 2rem;
+  animation: slideInDown 1s ease-in-out;
 }
 .content h2 {
   font-size: 1.3rem;
@@ -162,6 +182,7 @@ footer h2 {
   color: #FFFFFF;
 }
 
+/** MEDIA QUERIES **/
 @media (max-width: 1200px) {
   .gallery-image {
     flex: 0 0 50%;
